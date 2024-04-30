@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { baseApiUrl } from "../constants.js";
 import { Link } from "react-router-dom/dist";
+import PostList from "./PostList.jsx";
+import SinglePost from "./SinglePost.jsx";
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
@@ -16,13 +18,20 @@ const Home = () => {
       });
   }, []);
 
+  const handleDelete = (postId) => {
+    // Aggiorna lo stato per rimuovere il post eliminato
+    setPosts(posts.filter((post) => post.id !== postId));
+  };
+
   return (
-    <div>
-      <ul>
+    <div className="home-container">
+      <div className="text-center">
+        <h1>Benvenuto nel nostro Blog</h1>
+        <p>Scegli un articolo da leggere o creane uno tu!!</p>
+      </div>
+      <ul className="post-list">
         {posts.map((post) => (
-          <li key={post.id}>
-            <Link to={`/posts/${post.id}`}>{post.title.rendered}</Link>
-          </li>
+          <SinglePost key={post.id} post={post} onDelete={handleDelete} />
         ))}
       </ul>
     </div>

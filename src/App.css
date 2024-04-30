@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,75 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.nav {
+  background-color: rgb(22, 20, 24);
+}
+
+body {
+  background-color: rgb(235, 235, 235);
+}
+
+.home-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.post-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.post-item {
+  margin-bottom: 10px;
+}
+
+.post-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.post-link:hover {
+  color: #007bff;
+}
+
+.post-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-link {
+  color: #333;
+  text-decoration: none;
+}
+
+.post-link:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.button-container {
+  margin-left: auto; /* Spinge i bottoni verso destra */
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
 }

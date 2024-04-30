@@ -5,6 +5,7 @@ import MyNavbar from "./components/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Details from "./components/PostDetails";
+import NewArticle from "./components/FormNewArticle";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/posts/:id" element={<Details />} />
+          <Route path="/NewArticle" element={<NewArticle />} />
         </Routes>
       </Container>
     </BrowserRouter>
