@@ -6,7 +6,7 @@ function MyNavbar() {
   return (
     <Navbar expand="lg" className="bg-body-primary nav">
       <Container>
-        <Navbar.Brand href="#" className="text-white">
+        <Navbar.Brand href="/" className="text-white">
           Blog
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggle" />
