@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Details from "./components/PostDetails";
 import NewArticle from "./components/FormNewArticle";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/NewArticle" element={<NewArticle />} />
         </Routes>
       </Container>
+      <Footer />
     </BrowserRouter>
   );
 }

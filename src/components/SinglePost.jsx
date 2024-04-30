@@ -3,6 +3,7 @@ import { baseApiUrl } from "../constants.js";
 import { Link } from "react-router-dom";
 import { username } from "../constants";
 import { password } from "../constants";
+import { BiTrash } from "react-icons/bi";
 
 // Componente per rappresentare singolarmente un articolo
 const SinglePost = ({ post, onDelete }) => {
@@ -36,8 +37,11 @@ const SinglePost = ({ post, onDelete }) => {
         </Link>
       </div>
       <div className="button-container">
-        <button onClick={handleDelete} className="delete-button">
+        {/* <button onClick={handleDelete} className="delete-button">
           Elimina
+        </button> */}
+        <button onClick={handleDelete} className="delete-button">
+          <BiTrash />
         </button>
       </div>
     </li>

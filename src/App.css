@@ -96,8 +96,8 @@ body {
 }
 
 .delete-button {
-  background-color: #dc3545;
-  color: #fff;
+  background-color: none;
+  color: #6b6b6b;
   border: none;
   padding: 5px 10px;
   border-radius: 3px;
