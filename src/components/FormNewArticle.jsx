@@ -43,26 +43,21 @@ const NewArticle = () => {
   };
 
   return (
-    <div>
-      <h2>Crea un nuovo post</h2>
+    <div className="p-4">
+      <h2 className="mb-4">Crea un nuovo post</h2>
       <Form onSubmit={handleSubmit}>
-        <Form.Group controlId="formTitle">
+        <Form.Group controlId="formTitle" className="mb-3">
           <Form.Label>Titolo</Form.Label>
           <Form.Control
             type="text"
             required
             placeholder="Inserisci il titolo"
             value={form.title}
-            onChange={(e) => {
-              setForm({
-                ...form,
-                title: e.target.value,
-              });
-            }}
+            onChange={(e) => setForm({ ...form, title: e.target.value })}
           />
         </Form.Group>
 
-        <Form.Group controlId="formContent">
+        <Form.Group controlId="formContent" className="mb-3">
           <Form.Label>Contenuto</Form.Label>
           <Form.Control
             as="textarea"
@@ -70,16 +65,11 @@ const NewArticle = () => {
             placeholder="Inserisci il contenuto"
             required
             value={form.content}
-            onChange={(e) => {
-              setForm({
-                ...form,
-                content: e.target.value,
-              });
-            }}
+            onChange={(e) => setForm({ ...form, content: e.target.value })}
           />
         </Form.Group>
 
-        <Button variant="primary" type="submit">
+        <Button variant="primary" type="submit" className="mt-4">
           Invia Post
         </Button>
       </Form>

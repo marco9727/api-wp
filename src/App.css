@@ -45,6 +45,10 @@ body {
   background-color: rgb(235, 235, 235);
 }
 
+.toggle {
+  background-color: #f9f9f9;
+}
+
 .home-container {
   max-width: 800px;
   margin: 0 auto;
