@@ -47,6 +47,11 @@ const Home = () => {
           ))}
         </ul>
       )}
+      <div>
+        <Link to="/NewArticle">
+          <a href="#">Crea un nuovo articolo</a>
+        </Link>
+      </div>
     </div>
   );
 };

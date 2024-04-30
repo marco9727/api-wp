@@ -37,9 +37,6 @@ const SinglePost = ({ post, onDelete }) => {
         </Link>
       </div>
       <div className="button-container">
-        {/* <button onClick={handleDelete} className="delete-button">
-          Elimina
-        </button> */}
         <button onClick={handleDelete} className="delete-button">
           <BiTrash />
         </button>
